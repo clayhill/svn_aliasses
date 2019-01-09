@@ -3,3 +3,8 @@ alias infinity='svn up --set-depth infinity'
 
 alias sst='svn status'
 alias sup='svn update'
+alias sd='svn diff'
+
+function sdc() {
+  svn diff $@ | colordiff
+}
